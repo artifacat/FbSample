@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Dashboard" xml:space="preserve">
+    <value>仪表盘</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>监控</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="Debug" xml:space="preserve">
+    <value>调试</value>
+  </data>
+  <data name="LogsPage1" xml:space="preserve">
+    <value>日志页面1</value>
+  </data>
+  <data name="LogsPage2" xml:space="preserve">
+    <value>日志页面2</value>
+  </data>
+  <data name="DebugPage1" xml:space="preserve">
+    <value>调试页面1</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="CollapseNavigation" xml:space="preserve">
+    <value>收起导航栏</value>
+  </data>
+  <data name="ExpandNavigation" xml:space="preserve">
+    <value>展开导航栏</value>
+  </data>
+  <data name="BasicSettings" xml:space="preserve">
+    <value>基本设置</value>
+  </data>
+  <data name="MessageSettings" xml:space="preserve">
+    <value>消息配置</value>
+  </data>
+  <data name="EnableAnimations" xml:space="preserve">
+    <value>开启动画</value>
+  </data>
+  <data name="EnableShadows" xml:space="preserve">
+    <value>启用阴影</value>
+  </data>
+  <data name="HideScrollbars" xml:space="preserve">
+    <value>隐藏滚动条</value>
+  </data>
+  <data name="ShowInWindow" xml:space="preserve">
+    <value>窗口内弹出</value>
+  </data>
+  <data name="ShowInWindowDescription" xml:space="preserve">
+    <value>在应用窗口范围内显示消息与通知。</value>
+  </data>
+  <data name="WindowOffset" xml:space="preserve">
+    <value>边界偏移量</value>
+  </data>
+  <data name="WindowOffsetDescription" xml:space="preserve">
+    <value>调整消息与通知距显示区域边界的间距。</value>
+  </data>
+  <data name="WindowOffsetOutOfRange" xml:space="preserve">
+    <value>{0} 超出范围，未应用；当前生效值为 {1}。</value>
+  </data>
+  <data name="SwitchSuccess" xml:space="preserve">
+    <value>切换成功！</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="Minimize" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="Maximize" xml:space="preserve">
+    <value>最大化</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>全屏</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>重做</value>
+  </data>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>Devices</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Debug" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="LogsPage1" xml:space="preserve">
+    <value>LogsPage1</value>
+  </data>
+  <data name="LogsPage2" xml:space="preserve">
+    <value>LogsPage2</value>
+  </data>
+  <data name="DebugPage1" xml:space="preserve">
+    <value>DebugPage1</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="CollapseNavigation" xml:space="preserve">
+    <value>Collapse navigation</value>
+  </data>
+  <data name="ExpandNavigation" xml:space="preserve">
+    <value>Expand navigation</value>
+  </data>
+  <data name="BasicSettings" xml:space="preserve">
+    <value>Basic Settings</value>
+  </data>
+  <data name="MessageSettings" xml:space="preserve">
+    <value>Message configuration</value>
+  </data>
+  <data name="EnableAnimations" xml:space="preserve">
+    <value>Turn on animation</value>
+  </data>
+  <data name="EnableShadows" xml:space="preserve">
+    <value>Enable shadow</value>
+  </data>
+  <data name="HideScrollbars" xml:space="preserve">
+    <value>Hide scrollbar</value>
+  </data>
+  <data name="ShowInWindow" xml:space="preserve">
+    <value>Show in window</value>
+  </data>
+  <data name="ShowInWindowDescription" xml:space="preserve">
+    <value>Show messages and notifications within the application window.</value>
+  </data>
+  <data name="WindowOffset" xml:space="preserve">
+    <value>WindowOffsetXY</value>
+  </data>
+  <data name="WindowOffsetDescription" xml:space="preserve">
+    <value>Adjust the spacing between popups and the placement boundary.</value>
+  </data>
+  <data name="WindowOffsetOutOfRange" xml:space="preserve">
+    <value>{0} is out of range and wasn’t applied; the active value is {1}.</value>
+  </data>
+  <data name="SwitchSuccess" xml:space="preserve">
+    <value>Switch successful.</value>
+  </data>
+  <data name="Tip" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="Minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="Maximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Full screen</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+</root>

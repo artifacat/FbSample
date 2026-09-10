@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+.vs/
+/.idea/
+TestResults/
+artifacts/
+*.user
+*.suo
+/AGENTS.md
+/csharp14-dotnet10-team-coding-standards.md
+/state-machine-coding-standard.md
