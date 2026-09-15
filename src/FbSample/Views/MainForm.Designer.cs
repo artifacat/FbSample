@@ -184,7 +184,7 @@ partial class MainForm
         _backButton.Enabled = false;
         _backButton.Ghost = true;
         _backButton.IconRatio = 0.9150327F;
-        _backButton.ToggleIconSvg = "ArrowLeftOutlined";
+        _backButton.IconSvg = "ArrowLeftOutlined";
         _backButton.Location = new Point(4, 4);
         _backButton.Radius = 5;
         _backButton.Size = new Size(49, 41);

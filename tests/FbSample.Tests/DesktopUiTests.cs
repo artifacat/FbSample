@@ -886,6 +886,67 @@ public sealed class DesktopUiTests
             "Scrolling must translate the same text pixels without duplicate glyphs or a changed font.");
     }
 
+    /// <summary>Checks navigation button hover frames stay between the sidebar and hover colors without flashing.</summary>
+    /// <param name="dark">Whether to use the dark navigation palette.</param>
+    /// <param name="expanded">Whether to expand the navigation before hovering.</param>
+    [TestMethod]
+    [TestCategory("Rendering")]
+    [DataRow(false, false)]
+    [DataRow(false, true)]
+    [DataRow(true, false)]
+    [DataRow(true, true)]
+    public void NavigationButtonHoverAnimationKeepsPaletteColors(bool dark, bool expanded)
+    {
+        using var form = new OffscreenMainForm();
+        form.Show();
+        Config.IsLight = !dark;
+        form.NavigateTo("Devices");
+        AntdUI.Button back = GetControl<AntdUI.Button>(form, "_backButton");
+        AntdUI.Button collapse = GetControl<AntdUI.Button>(form, "_collapseButton");
+        if (expanded)
+        {
+            InvokeClick(collapse);
+        }
+
+        Color background = GetControl<AntdUI.Panel>(form, "_navigationPanel").BackColor;
+        Color hover = dark ? Color.FromArgb(51, 54, 59) : Color.FromArgb(239, 239, 239);
+        FieldInfo? animation = typeof(AntdUI.Button).GetField("AnimationHover",
+            BindingFlags.Instance | BindingFlags.NonPublic);
+        FieldInfo? opacity = typeof(AntdUI.Button).GetField("AnimationHoverValue",
+            BindingFlags.Instance | BindingFlags.NonPublic);
+        Assert.IsNotNull(animation);
+        Assert.IsNotNull(opacity);
+        foreach (AntdUI.Button button in new[] { back, collapse })
+        {
+            button.ExtraMouseHover = true;
+            // Drive native drawing frames directly so timer scheduling cannot hide a brief color flash.
+            animation.SetValue(button, true);
+            try
+            {
+                foreach (int alpha in new[] { 0, 64, 128, 192, 255 })
+                {
+                    opacity.SetValue(button, alpha);
+                    using Bitmap frame = CaptureControl(button);
+                    Color pixel = GetRowBackground(frame, button.ClientRectangle, button.DeviceDpi);
+                    Assert.IsTrue(
+                        pixel.R >= Math.Min(background.R, hover.R) - 1 && pixel.R <= Math.Max(background.R, hover.R) + 1
+                        && pixel.G >= Math.Min(background.G, hover.G) - 1 && pixel.G <= Math.Max(background.G, hover.G) + 1
+                        && pixel.B >= Math.Min(background.B, hover.B) - 1 && pixel.B <= Math.Max(background.B, hover.B) + 1,
+                        $"{button.Name} hover alpha {alpha} rendered {pixel} outside the navigation palette.");
+                }
+            }
+            finally
+            {
+                animation.SetValue(button, false);
+            }
+
+            using Bitmap settled = CaptureControl(button);
+            Assert.AreEqual(hover.ToArgb(),
+                GetRowBackground(settled, button.ClientRectangle, button.DeviceDpi).ToArgb());
+            button.ExtraMouseHover = false;
+        }
+    }
+
     /// <summary>Checks that returning visits prior pages in order, reuses their state, and collapses navigation.</summary>
     [TestMethod]
     public void BackButtonReturnsThroughCachedPagesInOrderAndDisablesAtInitialPage()

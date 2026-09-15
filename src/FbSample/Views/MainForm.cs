@@ -278,7 +278,6 @@ public partial class MainForm : Window
         int textPadding = (int)Math.Round(6 * (DeviceDpi / 96F));
         int textLeft = collapsedWidth + _navigationDivider.Width + textPadding;
         bool canGoBack = _navigationHistory.Count > 0;
-        _backButton.Toggle = canGoBack;
         _backButton.Enabled = _backButton.Visible = canGoBack;
         _navigationLogo.Bounds = new Rectangle(canGoBack ? textLeft : iconRight - iconSize,
             padding + (rowHeight - iconSize) / 2, iconSize, iconSize);
